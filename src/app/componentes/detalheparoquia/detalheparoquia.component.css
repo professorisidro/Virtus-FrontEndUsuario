@@ -1,0 +1,13 @@
+h3{
+    font-family: OptimusPrinceps;
+    color: white;
+}
+
+.info{
+    background-color: white;
+    color: black;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    opacity: 0.85;
+    
+}

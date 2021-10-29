@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row mt-3 mb-3">
+        <div class="col-12 text-center">
+            <h3>Selecione uma Paroquia</h3>
+        </div>
+    </div>
+    <div class="row linhaParoquia" *ngFor="let ITEM of paginaParoquia.content">
+        <div class="col-12">
+            <a [routerLink]="['/detalhe',ITEM.id]">{{ITEM.nome}}</a>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" *ngIf="paginaParoquia.first == false"
+                    (click)="recuperarPagina(paginaAnterior)"
+                    class="btn btn-outline-primary">{{paginaAnterior}}</button>
+                <button type="button" class="btn btn-outline-primary btn-activated">{{paginaAtual}}</button>
+                <button type="button" *ngIf="paginaParoquia.last == false"
+                    (click)="recuperarPagina(proximaPagina)"
+                    class="btn btn-outline-primary">{{proximaPagina}}</button>
+            </div>
+
+        </div>
+    </div>
+</div>

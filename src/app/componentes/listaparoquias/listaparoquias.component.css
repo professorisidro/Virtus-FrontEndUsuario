@@ -1,0 +1,38 @@
+h3{
+    font-family: OptimusPrinceps;
+    color: white;
+}
+
+a, a:hover, a:active, a:link, a:visited{
+    color: black;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.btn, .btn-outline-primary{
+    border: 2px solid white;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn:hover, .btn-outline-primary:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+.linhaParoquia{
+    background-color: white;
+    opacity: 0.7;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 7px;
+}
+
+.btn-activated{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}

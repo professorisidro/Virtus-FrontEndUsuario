@@ -1,0 +1,27 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3> Busque sua Paroquia </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <label for="selectEstado">Selecione o Estado</label>
+            <select class="form-select" id="selectEstado" (change)="buscaCidades()" [(ngModel)]="idEstado"
+                aria-label="Selecao de Estados">
+                <option *ngFor="let ITEM of listaEstados" value="{{ITEM.id}}">{{ITEM.nome}}</option>
+            </select>
+        </div>
+    </div>
+    <div *ngIf="idEstado != 0">
+        <div class="row mt-2">
+            <div class="col-12">
+                <label for="selectCidade">Selecione a Cidade</label>
+                <select class="form-select" id="selectCidade" (change)="buscarParoquias()" [(ngModel)]="idCidade"
+                    aria-label="Selecao de Cidades">
+                    <option *ngFor="let CIDADE of listaCidades" value="{{CIDADE.id}}">{{CIDADE.nome}}</option>
+                </select>
+            </div>
+        </div>        
+    </div>
+</div>
