@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   //apiURL:'http://localhost:8080'
-  apiURL: 'http://doeparasuaparoquia:8080'
+  apiURL: 'http://doeparasuaparoquia.com.br:8080'
 };
 
 /*
