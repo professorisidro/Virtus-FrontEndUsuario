@@ -36,4 +36,12 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         source: dist/virtus/*
         target: /root/virtus-front/
+    - name: Executing Deploy Script
+      uses: appleboy/ssh-action@master
+      with: 
+         host: cloud.professorisidro.com.br
+         port: 22
+         username: root
+         password: ${{ secrets.PASSWORD }}
+         script: /root/deployfront.sh
 
